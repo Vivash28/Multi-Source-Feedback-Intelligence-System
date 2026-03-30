@@ -1,0 +1,38 @@
+# ============================================================
+# Multi-Source Feedback Intelligence System — requirements.txt
+# ============================================================
+
+# Core Data
+pandas
+numpy
+
+# Fetchers
+google-play-scraper
+requests
+
+# Sentiment Analysis
+transformers
+torch
+tokenizers
+
+# Dashboard
+streamlit
+plotly
+
+# PDF Generation
+reportlab
+Pillow
+
+# Utilities
+python-dateutil
+pytz
+tqdm
+scikit-learn
+
+# Testing
+pytest
+pytest-cov
+pytest-mock
+
+# Code Quality
+flake8

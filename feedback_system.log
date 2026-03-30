@@ -1,0 +1,52 @@
+2026-03-04 00:06:02 | INFO     | fetchers.google_play | GooglePlayFetcher: fetched 150 reviews for app_id=com.spotify.music
+2026-03-04 00:06:02 | INFO     | analysis.sentiment | Loading sentiment model 'distilbert-base-uncased-finetuned-sst-2-english'…
+2026-03-04 00:06:04 | INFO     | analysis.sentiment | Sentiment model loaded successfully.
+2026-03-04 00:06:04 | INFO     | analysis.sentiment | Running sentiment analysis on 150 reviews in 5 batches…
+2026-03-04 00:06:13 | INFO     | analysis.sentiment | Sentiment analysis complete.
+2026-03-04 00:06:13 | WARNING  | analysis.trend_analysis | 1 sentiment alert(s) detected.
+2026-03-04 00:06:13 | INFO     | analysis.issue_prioritizer | IssuePrioritizer: identified 15 prioritised issues.
+2026-03-04 00:09:07 | INFO     | fetchers.google_play | GooglePlayFetcher: fetched 150 reviews for app_id=com.linkedin.android
+2026-03-04 00:09:07 | INFO     | analysis.sentiment | Running sentiment analysis on 150 reviews in 5 batches…
+2026-03-04 00:09:14 | INFO     | analysis.sentiment | Sentiment analysis complete.
+2026-03-04 00:09:14 | INFO     | analysis.trend_analysis | No sentiment alerts detected.
+2026-03-04 00:09:14 | INFO     | analysis.issue_prioritizer | IssuePrioritizer: identified 15 prioritised issues.
+2026-03-04 00:09:31 | ERROR    | __main__ | PDF generation error
+Traceback (most recent call last):
+  File "C:\Users\Bharath Kumar\OneDrive\Desktop\feedback_intelligence\app.py", line 400, in main
+    generator.generate()
+  File "C:\Users\Bharath Kumar\OneDrive\Desktop\feedback_intelligence\reporting\pdf_generator.py", line 143, in generate
+    story = self._build_story()
+  File "C:\Users\Bharath Kumar\OneDrive\Desktop\feedback_intelligence\reporting\pdf_generator.py", line 164, in _build_story
+    story += self._trend_chart_section()
+  File "C:\Users\Bharath Kumar\OneDrive\Desktop\feedback_intelligence\reporting\pdf_generator.py", line 289, in _trend_chart_section
+    img_path = self._fig_to_tmp_png(fig)
+  File "C:\Users\Bharath Kumar\OneDrive\Desktop\feedback_intelligence\reporting\pdf_generator.py", line 461, in _fig_to_tmp_png
+    fig.write_image(tmp.name, width=900, height=450, scale=2)
+  File "C:\Users\Bharath Kumar\anaconda3\envs\py310\lib\site-packages\plotly\basedatatypes.py", line 3841, in write_image
+    return pio.write_image(self, *args, **kwargs)
+  File "C:\Users\Bharath Kumar\anaconda3\envs\py310\lib\site-packages\plotly\io\_kaleido.py", line 266, in write_image
+    img_data = to_image(
+  File "C:\Users\Bharath Kumar\anaconda3\envs\py310\lib\site-packages\plotly\io\_kaleido.py", line 132, in to_image
+    raise ValueError(
+ValueError: 
+Image export using the "kaleido" engine requires the kaleido package,
+which can be installed using pip:
+    $ pip install -U kaleido
+
+2026-03-04 00:12:13 | INFO     | fetchers.google_play | GooglePlayFetcher: fetched 150 reviews for app_id=com.linkedin.android
+2026-03-04 00:12:13 | INFO     | analysis.sentiment | Loading sentiment model 'distilbert-base-uncased-finetuned-sst-2-english'…
+2026-03-04 00:12:15 | INFO     | analysis.sentiment | Sentiment model loaded successfully.
+2026-03-04 00:12:15 | INFO     | analysis.sentiment | Running sentiment analysis on 150 reviews in 5 batches…
+2026-03-04 00:12:23 | INFO     | analysis.sentiment | Sentiment analysis complete.
+2026-03-04 00:12:23 | INFO     | analysis.trend_analysis | No sentiment alerts detected.
+2026-03-04 00:12:23 | INFO     | analysis.issue_prioritizer | IssuePrioritizer: identified 15 prioritised issues.
+2026-03-04 00:21:32 | INFO     | fetchers.google_play | GooglePlayFetcher: fetched 150 reviews for app_id=com.spotify.music
+2026-03-04 00:21:32 | INFO     | analysis.sentiment | Loading sentiment model 'distilbert-base-uncased-finetuned-sst-2-english'…
+2026-03-04 00:21:33 | INFO     | analysis.sentiment | Sentiment model loaded successfully.
+2026-03-04 00:21:33 | INFO     | analysis.sentiment | Running sentiment analysis on 150 reviews in 5 batches…
+2026-03-04 00:21:40 | INFO     | analysis.sentiment | Sentiment analysis complete.
+2026-03-04 00:21:40 | WARNING  | analysis.trend_analysis | 1 sentiment alert(s) detected.
+2026-03-04 00:21:40 | INFO     | analysis.issue_prioritizer | IssuePrioritizer: identified 15 prioritised issues.
+2026-03-04 00:22:43 | WARNING  | analysis.trend_analysis | 1 sentiment alert(s) detected.
+2026-03-04 00:22:43 | INFO     | analysis.issue_prioritizer | IssuePrioritizer: identified 15 prioritised issues.
+2026-03-04 00:22:51 | INFO     | reporting.pdf_generator | PDF report saved to 'C:\Users\BHARAT~1\AppData\Local\Temp\tmp9rz0flfv.pdf'.
